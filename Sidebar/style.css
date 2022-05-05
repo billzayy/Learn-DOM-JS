@@ -1,0 +1,86 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lavender;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin : 0;
+    font-size: 25px;
+}
+
+.card{
+    background-color: white;
+    height: 100%;
+    width: 30%;
+    padding: 5px 10px;
+    margin: 0;
+    position: fixed;
+    transition: ease 0.5s;
+    transform: translateX(-100%);
+}
+
+.hide-card{
+    transform: translate(0%);
+    background-color: white;
+    height: 100%;
+    width: 30%;
+    padding: 5px 10px;
+    margin: 0;
+    position: fixed;
+    transition: ease 0.5s;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .title{
+    letter-spacing: 5px;
+    text-shadow: 3px 3px 2px gray;
+}
+
+.header .title span{
+    color: darkturquoise;
+}
+
+.header .remove-btn{
+    color:brown;
+    font-size: 30px;
+}
+.header .remove-btn:hover{
+    cursor: pointer;
+}
+.menu ul li{
+    list-style-type: none;
+    margin: 10px 0;
+    transition: ease 0.5s;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.menu ul li:hover{
+    cursor: pointer;
+    background-color: lightgray;
+    padding: 10px 15px;
+}
+
+.bars-btn{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin: 12px;
+    font-size: 40px;
+}
+
+.bars-btn:hover{
+    cursor: pointer;
+}

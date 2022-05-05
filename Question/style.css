@@ -1,0 +1,77 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.title{
+    text-align: center;
+    color:tan;
+    font-size: 35px;
+}
+.card{
+    display:block;
+    background-color: aliceblue;
+    border-radius: 10px;
+    width : auto;
+    padding: 24px;
+    margin: 10px 50px;
+    overflow: hidden;
+    height: 3.8rem;
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.question-title{
+    letter-spacing: 3px;
+}
+
+.question-icon{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.question-icon .plus-icon, .minus-icon{
+    border: 2px solid tan;
+    color:burlywood;
+    text-align: center;
+    padding: 0 3px;
+    margin: 0 5px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+.plus-icon, .minus-icon:hover{
+    cursor: pointer;
+}
+
+.question-icon .hide-icon{
+    display: none;
+}
+
+.show-content{
+    height: auto;
+    overflow: visible;
+}
+
+.answer{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    color:cornflowerblue ;
+    padding:0 10px;
+}

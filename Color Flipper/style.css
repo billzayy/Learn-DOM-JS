@@ -1,0 +1,48 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: ease 1s;
+}
+#color-flip{
+    display: block;
+    text-align: center;
+}
+
+.color-box{
+    display: flex;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 40px;
+    border-radius: 10px;
+}
+
+.color-box .color-value{
+    color:aqua;
+}
+.btn-change-color{
+    margin-top: 10px;
+}
+.btn-color{
+    border: 3px solid black;
+    font-size: 23px;
+    padding: 8px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    transition: ease 0.5s;
+}
+.btn-color:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}

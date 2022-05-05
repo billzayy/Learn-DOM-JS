@@ -1,0 +1,82 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightgray;
+}
+
+.container{
+    width: 100%;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    align-items: center;
+    padding: 10px;
+}
+.icon{
+    display: none;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+}
+li{
+    margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+    transition: ease 0.5s;
+}
+li:hover{
+    cursor: pointer;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 716px) {
+    .navbar {
+        display: block;
+        background-color: antiquewhite;
+        padding: 10px;
+    }
+    .links,.social-media{
+        height: 0;
+        overflow: hidden;
+        transition: linear 0.5s;
+    }
+    .show-links{
+        height: auto;
+    }
+    .menu ul {
+        display: block;
+        list-style-type: none;
+    }
+    .icon{
+        display: flex;
+        align-items: center;
+    }
+    .title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    li{
+        transition: ease 0.5s;
+    }
+    .menu li:hover {
+        cursor: pointer;
+        background-color: lightgray;
+        border-radius: 10px;
+        padding-left: 10px;
+    }
+    .fa-bars{
+        font-size: 30px;
+    }
+    .fa-bars:hover{
+        cursor: pointer;
+    }
+}
